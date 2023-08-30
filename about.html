@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/033d1fe604.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Jolon-Home</title>
+  </head>
+  <body>
+    <div class="page-layout">
+      <header class="menu-bar">
+        <div class="logo-left">
+          <p class="logo-text"><a href="index.html">JOLON</a></p>
+        </div>
+        <div class="menu">
+          <ul class="menu-items-ul">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="about.html" class="menu-link">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a href="contact.html" class="menu-link">Contact</a>
+            </li>
+            <div class="socials">
+              <ul class="social-icons">
+                <li>
+                  <a href="https://twitter.com/jolondoteth" target="_blank"
+                    ><i
+                      class="fa-brands fa-x-twitter fa-2x small-icon-style"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com" target="_blank"
+                    ><i
+                      class="fa-brands fa-linkedin-in fa-2x small-icon-style"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/jolonbentley" target="_blank"
+                    ><i
+                      class="fa-brands fa-instagram fa-2x small-icon-style"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <div class="main-socials">
+          <ul class="main-social-icons">
+            <li>
+              <a href="https://twitter.com/jolondoteth" target="_blank"
+                ><i class="fa-brands fa-x-twitter icon-style"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" target="_blank"
+                ><i class="fa-brands fa-linkedin-in icon-style"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/jolonbentley" target="_blank"
+                ><i class="fa-brands fa-instagram icon-style"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="below-content">
+        <div class="page-heading">
+          <h1>About</h1>
+        </div>
+        <div class="planes-container">
+          <p class="before-text">Before COVID I used to fly planes..</p>
+        </div>
+        <div class="plane-video">
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Me in a past life 👨‍✈️✈️
+              <a href="https://t.co/mAVV9GBEbP">pic.twitter.com/mAVV9GBEbP</a>
+            </p>
+            &mdash; Jolon (@JolonDotEth)
+            <a
+              href="https://twitter.com/JolonDotEth/status/1674161038076559360?ref_src=twsrc%5Etfw"
+              >June 28, 2023</a
+            >
+          </blockquote>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+        <hr class="hr1" />
+        <div class="first-about-section">
+          <p class="jayz-text">
+            .. But that was then and this is now, so "allow me to re-introduce
+            myself" (Jay-Z)
+          </p>
+        </div>
+        <div class="image-me">
+          <img
+            src="/Images/Me-and-Dash.jpg"
+            alt="Picture of me"
+            class="me-and-dash"
+          />
+        </div>
+        <hr class="hr2" />
+        <div class="second-about-section">
+          <p class="second-about-text">
+            I'm Jolon and I am a website developer from Auckland, New
+            Zealand.<br /><br />
+            I primarily specialise in website development, but I also have some
+            experience in website design, and basic experience in graphic
+            design.<br /><br />
+            Various work of mine is displayed in the portfolio section, ranging
+            from landing pages, single page websites, as well as multi page
+            websites.<br /><br />
+            If you have any requests or queries, please reach out through the
+            contact page.
+            <br /><br />Thanks for stopping by!
+          </p>
+        </div>
+        <div class="y00ts-about">
+          <img
+            class="y00ts-about-image"
+            src="/Images/y00ts-14087.png"
+            alt="cartoon-animal-jpeg"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".menu-items-ul");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".menu-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        })
+      );
+    </script>
+  </body>
+</html>
